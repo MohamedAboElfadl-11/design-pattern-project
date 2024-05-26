@@ -8,8 +8,13 @@ class ConfigurationManager {
 
   ConfigurationManager._internal();
 
-  int get maxBorrowingLimit => 5; // Example configuration value
-  //double get lateFeePerDay => 0.5; // Example configuration value
+  // Library-wide settings
+  final int maxBorrowingLimit = 5;
+  final double lateFeePerDay = 0.5;
+  final int renewalPeriod = 7; // Days
 
-  // Add other configuration getter methods
+  // Getter methods for configuration values
+  int get getMaxBorrowingLimit => maxBorrowingLimit;
+  double get getLateFeePerDay => lateFeePerDay;
+  int get getRenewalPeriod => renewalPeriod;
 }

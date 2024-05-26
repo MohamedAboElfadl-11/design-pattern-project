@@ -19,8 +19,15 @@ void main() {
 
   switch (choice) {
     case 1:
+      ConfigurationManager config = ConfigurationManager();
+      int maxBorrowingLimit = config.getMaxBorrowingLimit;
+      double lateFeePerDay = config.getLateFeePerDay;
+      int renewalPeriod = config.getRenewalPeriod;
       // Access Configuration Manager instance (Singleton)
-      print(ConfigurationManager().maxBorrowingLimit);
+      print("Max borrowing limit: ${maxBorrowingLimit} Books");
+      print("Late fee per day: ${lateFeePerDay} \$");
+
+      print("Renewal period: ${renewalPeriod} days");
       break;
     case 2:
       // User Factory
