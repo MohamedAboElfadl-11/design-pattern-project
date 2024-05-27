@@ -13,7 +13,8 @@ void main() {
   print("3. Abstract Item Factory");
   print("4. Decorator (Fines)");
   print("5. Adapter (Legacy Data Import)");
-  print("Enter your choice (1-5): ");
+  print("6. Observer (push notification)");
+  print("Enter your choice (1-6): ");
 
   int choice = int.parse(stdin.readLineSync()!); // Read user input
 
@@ -26,7 +27,6 @@ void main() {
       // Access Configuration Manager instance (Singleton)
       print("Max borrowing limit: ${maxBorrowingLimit} Books");
       print("Late fee per day: ${lateFeePerDay} \$");
-
       print("Renewal period: ${renewalPeriod} days");
       break;
     case 2:

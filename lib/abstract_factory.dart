@@ -35,5 +35,3 @@ class BookFactory implements ItemFactory {
     }
   }
 }
-
-// Similar implementations for AudiobookFactory and potentially others
